@@ -6,10 +6,12 @@ const Task = (value) => {
   );
 }
 
+const lista = ['Codar', 'Café', 'Dormir', 'Do it again'];
+
 function App() {
   return (
     <div className="list">
-      { Task ('codar' )}
+      { lista.map((tarefa) => Task(tarefa)) }
     </div>
   );
 }
